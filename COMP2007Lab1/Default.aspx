@@ -56,10 +56,11 @@
                         <asp:Label ID="AgeLabel" Text="Age" runat="server" />
                         <asp:TextBox TextMode="Number" CssClass="form-control" ID="AgeTextBox" runat="server" MaxLength="100" />
                     </div>
+                    <asp:RangeValidator ID="AgeRangeValidator" runat="server" ErrorMessage="Enter Age between 0 to 120!" MaximumValue="120" MinimumValue="0" Type="Integer"></asp:RangeValidator>
                     <div class="form-group">
                         <asp:Label ID="AddressLabel" Text="Address" runat="server" />
                         <asp:TextBox CssClass="form-control" ID="AddressTextBox" runat="server" />
-                    </div>
+                   </div>
                     <div class="form-group">
                         <asp:Label ID="CityLabel" Text="City" runat="server" />
                         <asp:TextBox CssClass="form-control" ID="CityTextBox" runat="server" />
