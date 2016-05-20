@@ -121,6 +121,15 @@ namespace COMP2007Lab1 {
         protected global::System.Web.UI.WebControls.TextBox AddressTextBox;
         
         /// <summary>
+        /// AddressRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator AddressRequiredFieldValidator;
+        
+        /// <summary>
         /// CityLabel control.
         /// </summary>
         /// <remarks>
@@ -137,6 +146,15 @@ namespace COMP2007Lab1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CityTextBox;
+        
+        /// <summary>
+        /// CityRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CityRequiredFieldValidator;
         
         /// <summary>
         /// ProvinceLabel control.
@@ -157,6 +175,15 @@ namespace COMP2007Lab1 {
         protected global::System.Web.UI.WebControls.DropDownList ProvinceDropDownList;
         
         /// <summary>
+        /// ProvinceRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ProvinceRequiredFieldValidator;
+        
+        /// <summary>
         /// PostalLabel control.
         /// </summary>
         /// <remarks>
@@ -173,6 +200,15 @@ namespace COMP2007Lab1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox PostalTextBox;
+        
+        /// <summary>
+        /// PostalRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PostalRequiredFieldValidator;
         
         /// <summary>
         /// EnterButton control.

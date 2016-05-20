@@ -49,25 +49,27 @@
                         <asp:Label ID="FirstNameLabel" Text="First Name" runat="server" />
                         <asp:TextBox CssClass="form-control" ID="FirstNameTextBox" runat="server" />
                     </div>
-                    <asp:RequiredFieldValidator ID="FirstNameRequiredFieldValidator" runat="server" ErrorMessage="Please Enter First Name!" ControlToValidate="FirstNameTextBox" Font-Bold="True"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="FirstNameRequiredFieldValidator" runat="server" ErrorMessage="Please Enter First Name!" ControlToValidate="FirstNameTextBox" Font-Bold="True" SetFocusOnError="True"></asp:RequiredFieldValidator>
                     <div class="form-group">
                         <asp:Label ID="LastNameLabel" Text="Last Name" runat="server" />
                         <asp:TextBox CssClass="form-control" ID="LastNameTextBox" runat="server" />
                     </div>
-                    <asp:RequiredFieldValidator ID="LastNameRequiredFieldValidator" runat="server" ErrorMessage="Please Enter Last Name!" Font-Bold="True"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="LastNameRequiredFieldValidator" runat="server" ErrorMessage="Please Enter Last Name!" Font-Bold="True" SetFocusOnError="True" ControlToValidate="LastNameTextBox"></asp:RequiredFieldValidator>
                     <div class="form-group">
                         <asp:Label ID="AgeLabel" Text="Age" runat="server" />
                         <asp:TextBox TextMode="Number" CssClass="form-control" ID="AgeTextBox" runat="server" MaxLength="100" />
                     </div>
-                    <asp:RangeValidator ID="AgeRangeValidator" runat="server" ErrorMessage="Enter Age between 0 to 120!" MaximumValue="120" MinimumValue="0" Type="Integer" ControlToValidate="AgeTextBox"></asp:RangeValidator>
+                    <asp:RangeValidator ID="AgeRangeValidator" runat="server" ErrorMessage="Enter Age between 0 to 120!" MaximumValue="120" MinimumValue="0" Type="Integer" ControlToValidate="AgeTextBox" SetFocusOnError="True" Font-Bold="True"></asp:RangeValidator>
                     <div class="form-group">
                         <asp:Label ID="AddressLabel" Text="Address" runat="server" />
                         <asp:TextBox CssClass="form-control" ID="AddressTextBox" runat="server" />
                    </div>
-                    <div class="form-group">
+                    <asp:RequiredFieldValidator ID="AddressRequiredFieldValidator" runat="server" ErrorMessage="Please Enter the Address" ControlToValidate="AddressTextBox" Font-Bold="True"></asp:RequiredFieldValidator>
+                    <div class="form-group" aria-haspopup="True">
                         <asp:Label ID="CityLabel" Text="City" runat="server" />
                         <asp:TextBox CssClass="form-control" ID="CityTextBox" runat="server" />
                     </div>
+                    <asp:RequiredFieldValidator ID="CityRequiredFieldValidator" runat="server" ErrorMessage="Please Enter Valid City" SetFocusOnError="True" ControlToValidate="CityTextBox" Font-Bold="True"></asp:RequiredFieldValidator>
                     <div class="form-group">
                         <asp:Label ID="ProvinceLabel" Text="Province:" runat="server" />
                         <asp:DropDownList ID="ProvinceDropDownList" runat="server">
@@ -82,10 +84,12 @@
 
                         </asp:DropDownList>
                     </div>
+                    <asp:RequiredFieldValidator ID="ProvinceRequiredFieldValidator" runat="server" ErrorMessage="Please Select a Province" SetFocusOnError="True" ControlToValidate="ProvinceDropDownList" Font-Bold="True"></asp:RequiredFieldValidator>
                     <div class="form-group">
                         <asp:Label ID="PostalLabel" Text="Postal Code" runat="server" />
-                        <asp:TextBox CssClass="form-control" ID="PostalTextBox" runat="server" />
+                        <asp:TextBox CssClass="form-control" ID="PostalTextBox" runat="server" CausesValidation="True" />
                     </div>
+                    <asp:RequiredFieldValidator ID="PostalRequiredFieldValidator" runat="server" ErrorMessage="Please Enter Postal Code" Font-Bold="True" SetFocusOnError="True" ControlToValidate="PostalTextBox"></asp:RequiredFieldValidator>
                     <asp:Button CssClass="btn btn-danger" ID="EnterButton" Text="Enter" runat="server" OnClick="EnterButton_Click" />
 
                     <br />
