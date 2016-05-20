@@ -54,7 +54,7 @@
                     </div>
                     <div class="form-group">
                         <asp:Label ID="AgeLabel" Text="Age" runat="server" />
-                        <asp:TextBox CssClass="form-control" ID="AgeTextBox" runat="server" />
+                        <asp:TextBox TextMode="Number" CssClass="form-control" ID="AgeTextBox" runat="server" MaxLength="100" />
                     </div>
                     <div class="form-group">
                         <asp:Label ID="AddressLabel" Text="Address" runat="server" />

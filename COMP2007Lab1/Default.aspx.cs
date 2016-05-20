@@ -12,7 +12,7 @@ namespace COMP2007Lab1
         protected void EnterButton_Click(object sender, EventArgs e)
         {
             FullNameTextBox.Text = FirstNameTextBox.Text.ToString() + " " + LastNameTextBox.Text.ToString();
-            FullAddressTextBox.Text = AddressTextBox.Text.ToString() + ", " + CityTextBox.Text.ToString() + ", " + ProvinceDropDownList.SelectedItem.Text.ToString() + ", Canada- " + PostalTextBox.Text.ToString();
+            FullAddressTextBox.Text = AddressTextBox.Text.ToString() + ", " + CityTextBox.Text.ToString() + ",  " + ProvinceDropDownList.SelectedItem.Text.ToString() + ", Canada - " + PostalTextBox.Text.ToString();
         }
     }
 }
