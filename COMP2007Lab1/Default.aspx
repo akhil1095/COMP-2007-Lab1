@@ -9,6 +9,7 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <nav class="navbar navbar-inverse">
@@ -48,10 +49,12 @@
                         <asp:Label ID="FirstNameLabel" Text="First Name" runat="server" />
                         <asp:TextBox CssClass="form-control" ID="FirstNameTextBox" runat="server" />
                     </div>
+                    <asp:RequiredFieldValidator ID="FirstNameRequiredFieldValidator" runat="server" ErrorMessage="Please Enter First Name!" ControlToValidate="FirstNameTextBox" Font-Bold="True"></asp:RequiredFieldValidator>
                     <div class="form-group">
                         <asp:Label ID="LastNameLabel" Text="Last Name" runat="server" />
                         <asp:TextBox CssClass="form-control" ID="LastNameTextBox" runat="server" />
                     </div>
+                    <asp:RequiredFieldValidator ID="LastNameRequiredFieldValidator" runat="server" ErrorMessage="Please Enter Last Name!" Font-Bold="True"></asp:RequiredFieldValidator>
                     <div class="form-group">
                         <asp:Label ID="AgeLabel" Text="Age" runat="server" />
                         <asp:TextBox TextMode="Number" CssClass="form-control" ID="AgeTextBox" runat="server" MaxLength="100" />
